@@ -5,7 +5,7 @@ In order to calculate the electrostatic potential atomic charges, some methods a
 
 Several helpful tutorials: http://sobereva.com/441, http://sobereva.com/476, http://sobereva.com/531
 
-##Generation of eqvcons.file
+## Generation of eqvcons.file
 See how many elements: `sort ele.txt |uniq -c|sort -nr`
 ```
   88 H
