@@ -30,3 +30,15 @@ See how many elements: `sort ele.txt |uniq -c|sort -nr`
 **Output:**
 `awk '{printf "," $1}' H_eqvcons.txt > H_out.txt`  
 **Useful Links:** > https://www.cnblogs.com/along21/p/10366886.html
+
+step1: Use GaussView to symmetrise the system
+step2: go through Optimisation process using Gaussian and output file: `AQx.fch` and `AQx.out`
+step3: `AQx.out` is the `AQx.log` file, put it into GaussView and save the file as `AQx.mol2` file  
+step3: use multiwfn: 
+```module load …
+ulimit -s unlimited
+7
+18
+1
+```
+
