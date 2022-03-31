@@ -34,11 +34,15 @@ See how many elements: `sort ele.txt |uniq -c|sort -nr`
 step1: Use GaussView to symmetrise the system
 step2: go through Optimisation process using Gaussian and output file: `AQx.fch` and `AQx.out`
 step3: `AQx.out` is the `AQx.log` file, put it into GaussView and save the file as `AQx.mol2` file  
-step3: use multiwfn: 
+step4: use multiwfn: 
 ```module load …
 ulimit -s unlimited
+multiwfn AQx.fch
 7
 18
 1
 ```
+output file: 
+step5: go to ACPYPE and type `acpype -i AQx.mol2 -c user -k maxcyc=0`, it will output: `gro`, `itp`, `top` files
+step6: opt `itp` and replace the charges `0.00000` with the RESP calculated charges using sublime txt app to easily replace
 
